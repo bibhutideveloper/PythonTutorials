@@ -1,10 +1,9 @@
-n = int(input("Enter range: "))
-total = 0
-
-if n>0:
-    for i in range(1,n+1):
-        total += i
-    print(total)
+a = int(input("Enter 1st  number: "))
+b = int(input("Enter 2nd  number: "))
+    
+if a>b:
+    print(a," is greatest.")
+elif b>a:
+    print(b," is greatest.")
 else:
-    print("Enter number >1")
-        
+    print("Both are same number.")

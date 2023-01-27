@@ -1,10 +1,6 @@
-n = int(input("Enter range: "))
-total = 0
+y = int(input("Enter year: "))
 
-if n>0:
-    for i in range(1,n+1):
-        total += i
-    print(total)
+if((y%4==0 and y%100!=0) or (y%400==0) ):
+    print("Leap year.")
 else:
-    print("Enter number >1")
-        
+    print("Not leap year.")

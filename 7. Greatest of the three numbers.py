@@ -1,10 +1,12 @@
-n = int(input("Enter range: "))
-total = 0
+a = int(input("Enter 1st number: "))
+b = int(input("Enter 2nd number: "))
+c = int(input("Enter 3rd number: "))
 
-if n>0:
-    for i in range(1,n+1):
-        total += i
-    print(total)
+if (a>b and a>c):
+    print(a," is greatest.")
+elif (b>a and b>c):
+    print(b, " is greatest.")
+elif (c>a and c>b):
+    print(c," is greatest.")
 else:
-    print("Enter number >1")
-        
+    print("All the  numbers are same.")

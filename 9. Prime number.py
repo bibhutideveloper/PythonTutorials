@@ -1,10 +1,9 @@
-n = int(input("Enter range: "))
-total = 0
+n = int(input("Enter a number: "))
 
-if n>0:
-    for i in range(1,n+1):
-        total += i
-    print(total)
-else:
-    print("Enter number >1")
-        
+for i in range(2,n):
+    if n%i==0:
+        print("Not Prime")
+        break
+    else:
+        print("Prime")
+        break
